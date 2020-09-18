@@ -1,4 +1,4 @@
-
+Please use your Google Maps API key in Annealing.js at const GOOGLE_KEY
 
 See localhost PORT on config.env file
 
