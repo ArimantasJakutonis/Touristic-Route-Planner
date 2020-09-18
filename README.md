@@ -1,7 +1,5 @@
 
 
-Add your MONGO_URI and GEOCODER_API_KEY to the "config/config.env" file.
-
 See localhost PORT on config.env file
 
 TO INTSALL 
