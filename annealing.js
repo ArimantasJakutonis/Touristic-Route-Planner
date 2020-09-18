@@ -9,7 +9,7 @@ let lat1 = 53.027;
 let lon1 = -2.19722;
 let lat2 = 52.652;
 let lon2 = -1.529;
-
+const GOOGLE_KEY = 'Please enter your google map api key here'
 
 function getCentreLat(lat1,lat2){
     return (lat1 + lat2) / 2;
@@ -56,7 +56,7 @@ function generateAllLocations(lat1,lon1,lat2,lon2){
 
     const url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' +
     getCentreLat(lat1,lat2) + ',' + getCentreLng(lon1,lon2)+ '&radius=' +
-    getDistance(lat1,lon1,lat2,lon2) / 2 * 1000 + '&type=tourist_attraction&key=AIzaSyDlkWOSul52mkt3zcUq3MbNI5cws01oDiY';
+    getDistance(lat1,lon1,lat2,lon2) / 2 * 1000 + '&type=tourist_attraction&key=' + GOOGLE_KEY;
 
     console.log(url);
 
